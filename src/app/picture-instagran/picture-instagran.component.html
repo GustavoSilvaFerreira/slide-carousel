@@ -1,0 +1,14 @@
+<!-- <p *ngFor="let pic of picture">
+  <img src="../assets/{{pic}}" class="img-fluid" alt="teste{{pic}}">
+</p> -->
+
+<div id="carousel" class="carousel slide overlay mt-2" data-ride="carousel" data-interval="3000" data-pause="false" style="background: #fff;">
+  <div id="carousel1" class="carousel-inner">
+    <div class="col-8 offset-2 carousel-item active">
+      <img class="d-block col-8 offset-2" src="../assets/imagem_1.jpeg" alt="foto1">
+    </div>
+    <div class="col-8 offset-2 carousel-item" *ngFor="let pic of picture">
+      <img class="d-block col-8 offset-2" src="../assets/marinalvafaz60/{{pic}}" alt="foto{{pic}}">
+    </div>
+  </div>
+</div>

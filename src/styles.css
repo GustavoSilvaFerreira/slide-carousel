@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+
+.wrapper {
+  min-width: 340px;
+}
+
+.content-wrapper{
+  /** Altura do rodapé tem que ser igual a isso aqui e vice-versa **/
+padding-bottom: 50px;
+}
+
+footer {
+  position: fixed;
+  height: 50px;
+  bottom: 0;
+  width: 100%;
+}
+
+.bg-orange {
+  background-color: rgb(255, 88, 0);
+}
+
+.text-through {
+  text-decoration: line-through;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
