@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { URL_API } from 'src/app.api';
+import { URL_API, URL_HOST_IMG } from 'src/app.api';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
@@ -9,11 +9,13 @@ import { HttpClient } from '@angular/common/http';
 })
 export class PictureInstagranComponent implements OnInit {
 
+  urlHostImg = '';
   picture: any = [];
 
   constructor(private httpClient: HttpClient) {}
 
   ngOnInit() {
+    this.urlHostImg = URL_HOST_IMG;
     this.getPicture();
 
     setInterval(() => {
@@ -22,6 +24,8 @@ export class PictureInstagranComponent implements OnInit {
   }
 
   getPicture() {
+    // exemplo de retorno da API = ['imagem.png', 'imagem.jpg']
+    // no html é setado o caminho até a imagem + nome da imagem do array
     return this.httpClient.get(`${URL_API}/picture`)
       .subscribe((picture: any) => {
         if(picture.length > 0) {

@@ -1,6 +1,11 @@
 # SlidesCarousel
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.2.2.
+Projeto para exibir imagens em carrossel
+
+## Passos
+Rodar o projeto  
+Rodar um servidor local onde as imagens ficarão hospedadas e apontar essa pasta no back e no front (utilizei o xampp)  
+Rodar a API, na api será listado os arquivos que está dentro do diretório
 
 ## Development server
 
