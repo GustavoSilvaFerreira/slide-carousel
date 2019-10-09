@@ -2,13 +2,17 @@
   <img src="../assets/{{pic}}" class="img-fluid" alt="teste{{pic}}">
 </p> -->
 
-<div id="carousel" class="carousel slide overlay mt-2" data-ride="carousel" data-interval="3000" data-pause="false" style="background: #fff;">
+<div id="carousel" class="carousel slide overlay mt-2" data-ride="carousel" data-interval="10000" data-pause="false" style="background: #fff;">
   <div id="carousel1" class="carousel-inner">
-    <div class="col-8 offset-2 carousel-item active">
-      <img class="d-block col-10 offset-1" style="max-height: 85vh;" src="{{urlHostImg}}/img/imagem_1.jpeg" alt="foto1">
+    <div class="carousel-item active">
+      <div class="d-flex col justify-content-center">
+        <img class="d-block" style="max-height: 85vh;" src="{{urlHostImg}}/img/imagem_1.jpeg" alt="foto1">
+      </div>
     </div>
-    <div class="col-8 offset-2 carousel-item" *ngFor="let pic of picture">
-      <img class="d-block col-10 offset-1" style="max-height: 85vh;" src="{{urlHostImg}}/img/marinalvafaz60/{{pic}}" alt="foto{{pic}}">
+    <div class="carousel-item" *ngFor="let pic of picture">
+      <div class="d-flex col justify-content-center">
+        <img class="d-block" style="max-height: 85vh;" src="{{urlHostImg}}/img/marinalvafaz60/{{pic}}" alt="foto{{pic}}">
+      </div>
     </div>
   </div>
 </div>
