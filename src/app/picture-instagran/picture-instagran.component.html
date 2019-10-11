@@ -2,11 +2,11 @@
   <img src="../assets/{{pic}}" class="img-fluid" alt="teste{{pic}}">
 </p> -->
 
-<div id="carousel" class="carousel slide overlay mt-2" data-ride="carousel" data-interval="10000" data-pause="false" style="background: #fff;">
-  <div id="carousel1" class="carousel-inner">
+<div id="carousel" class="carousel slide overlay d-flex col align-items-center" data-ride="carousel" data-interval="5000" data-pause="false" style="background: #fff; height: 90vh;">
+  <div id="carousel1" class="carousel-inner d-flex col align-items-center" style="height: 90vh;">
     <div class="carousel-item active">
       <div class="d-flex col justify-content-center">
-        <img class="d-block" style="max-height: 85vh;" src="{{urlHostImg}}/img/imagem_1.jpeg" alt="foto1">
+        <img class="d-block img-fluid" style="max-height: 85vh;" src="{{urlHostImg}}/img/imagem_1.jpeg" alt="foto1">
       </div>
     </div>
     <div class="carousel-item" *ngFor="let pic of picture">
