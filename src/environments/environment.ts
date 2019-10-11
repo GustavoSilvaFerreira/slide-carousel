@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  api: 'http://localhost:3000/v1',
-  host_img: 'http://localhost:80',
+  api: 'http://localhost:3500/v1',
+  host_img: 'http://localhost:8080',
 };
 
 /*

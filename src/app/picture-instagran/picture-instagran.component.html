@@ -6,12 +6,12 @@
   <div id="carousel1" class="carousel-inner d-flex col align-items-center" style="height: 90vh;">
     <div class="carousel-item active">
       <div class="d-flex col justify-content-center">
-        <img class="d-block img-fluid" style="max-height: 85vh;" src="{{urlHostImg}}/img/imagem_1.jpeg" alt="foto1">
+        <img class="d-block img-fluid" style="max-width: 100%; max-height: 85vh;" src="{{urlHostImg}}/img/imagem_1.jpeg" alt="foto1">
       </div>
     </div>
     <div class="carousel-item" *ngFor="let pic of picture">
       <div class="d-flex col justify-content-center">
-        <img class="d-block" style="max-height: 85vh;" src="{{urlHostImg}}/img/marinalvafaz60/{{pic}}" alt="foto{{pic}}">
+        <img class="d-block" style="max-width: 100%; max-height: 85vh;" src="{{urlHostImg}}/img/marinalvafaz60/{{pic}}" alt="foto{{pic}}">
       </div>
     </div>
   </div>
