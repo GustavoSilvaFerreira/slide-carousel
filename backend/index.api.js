@@ -55,8 +55,8 @@ async function main() {
             let fs = require('fs');
             let rimraf = require('rimraf');
 
-            let oldPath = 'C:/xampp/htdocs/img/4K Stogram/#brasil';
-            let newPath = 'C:/xampp/htdocs/img/marinalvafaz60';
+            let oldPath = process.env.OLD_PATH_DIR;
+            let newPath = process.env.NEW_PATH_DIR;
 
             // test
             let oldFiles = undefined;
