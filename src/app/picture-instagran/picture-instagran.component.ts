@@ -20,7 +20,7 @@ export class PictureInstagranComponent implements OnInit {
 
     setInterval(() => {
       this.getPicture();
-    }, 10000);
+    }, 300000);
   }
 
   getPicture() {
